@@ -18,11 +18,11 @@ int	*ft_range(int start, int end)
 	i = 0;
 	while(len--)
 	{
-		range[i] = min;
-		if(min < max)
-			min++;
+		range[i] = start;
+		if(start < end)
+			start++;
 		else 
-			min--;
+			start--;
 	}
 	return(range);
 }
